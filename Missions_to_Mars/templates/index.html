@@ -22,17 +22,19 @@
   <div class="container-fluid">
     <div>
       <h2>Latest Mars News</h2>
-      <p><h3>News title: {{ news_title }}</h3></p>
-      <p>news: {{ news_p }}</p>
+      <p><h3>News title: {{mars.title}}</h3></p>
+      <p>news: {{mars.para }}</p>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-md-7">
           <h3>Featured Mars Image</h3>
+          <img src="{{mars.f_img}}"/>
         </div>
         <div class="col-md-5">
           <h3>Mars Facts</h3>
+          {{mars.mars_facts|safe}}
         </div>
       </div>  
     </div>
@@ -42,10 +44,22 @@
       <hr>
 
       <div class="row">
-        <div class="col-md-3">hi</div>
-        <div class="col-md-3">hi</div>
-        <div class="col-md-3">hi</div>
-        <div class="col-md-3">hi</div>
+        <div class="col-md-3">
+          <img style="width:200px;height:200px" src="{{mars.hemisphere[0].img_url}}"/>
+          <p>{{mars.hemisphere[0].title}}</p>
+        </div>
+        <div class="col-md-3">
+          <img style="width:200px;height:200px" src="{{mars.hemisphere[1].img_url}}"/>
+          <p>{{mars.hemisphere[1].title}}</p>
+        </div>
+        <div class="col-md-3">
+          <img style="width:200px;height:200px" src="{{mars.hemisphere[2].img_url}}"/>
+          <p>{{mars.hemisphere[2].title}}</p>
+        </div>
+        <div class="col-md-3">
+          <img style="width:200px;height:200px" src="{{mars.hemisphere[3].img_url}}"/>
+          <p>{{mars.hemisphere[3].title}}</p>
+        </div>
       </div>  
     </div>  
   </div>

@@ -31,7 +31,7 @@ def scrape_info():
     browser.visit(url)
     
     time.sleep(1)
-    
+
     # Scrape page into Soup
     html = browser.html
     image_soup = soup(html,"html.parser")
@@ -39,7 +39,10 @@ def scrape_info():
 
     # Getting Mars facts
     mars_facts = pd.read_html("https://galaxyfacts-mars.com")[0]
-
+    mars_facts.columns=["Description", "Mars","Earth"]
+    mars_facts = mars_facts.iloc[2:]
+    mars_facts = mars_facts.reset_index(drop=True)
+    # mars_facts.set_index(inplace=True)
     # Converting data to HTML
     mars_html = mars_facts.to_html()
 
@@ -72,6 +75,14 @@ def scrape_info():
     hemi_url
     # Close the browser after scraping
     browser.quit()
+
+    mars_data= {
+        "title" : news_title,
+        "para" : news_p,
+        "f_img" : featured_image_url,
+        "mars_facts" : mars_html,
+        "hemisphere" : hemi_url
+    }
 
     # Return results
     return mars_data
