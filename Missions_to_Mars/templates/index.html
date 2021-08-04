@@ -8,7 +8,8 @@
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" media=”screen” />
+
 </head>
 
 <body>
@@ -16,14 +17,14 @@
     <div class="jumbotron text-center">
       <h1>Mission to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
-      </div>
+    </div>
   </div> 
     
   <div class="container-fluid">
     <div>
       <h2>Latest Mars News</h2>
       <p><h3>News title: {{mars.title}}</h3></p>
-      <p>news: {{mars.para }}</p>
+      <p>News: {{mars.para}}</p>
     </div>
 
     <div class="container">
@@ -64,7 +65,8 @@
     </div>  
   </div>
 
-  
+  <hr>
+
 </body>
 
 </html>

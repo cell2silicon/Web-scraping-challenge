@@ -1,7 +1,11 @@
-h1 {
-    color: blue;
+.col-md-3 {
+    border: 1px solid black;
 }
-.mh{
 
+.mh {
     text-align: center;
+    padding: 20px;
+}
+body {
+    background-color: red !important;
 }
