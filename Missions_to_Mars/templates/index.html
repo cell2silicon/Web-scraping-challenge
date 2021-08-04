@@ -8,13 +8,13 @@
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="../static/css/style.css" media=”screen” />
+  <link rel="stylesheet" href="../static/css/style.css"/>
 
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center mission">
       <h1>Mission to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
@@ -23,19 +23,20 @@
   <div class="container-fluid">
     <div>
       <h2>Latest Mars News</h2>
-      <p><h3>News title: {{mars.title}}</h3></p>
-      <p>News: {{mars.para}}</p>
+      <p><h4>News title: {{mars.title}}</h4></p>
+      <p class="news">News: {{mars.para}}</p>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7 image">
           <h3>Featured Mars Image</h3>
           <img src="{{mars.f_img}}"/>
         </div>
-        <div class="col-md-5">
+        <div <div class="col-md-1"></div>
+        <div class="col-md-4 facts">
           <h3>Mars Facts</h3>
-          {{mars.mars_facts|safe}}
+          <p class="fun">{{mars.mars_facts|safe}}</p>
         </div>
       </div>  
     </div>
@@ -46,20 +47,20 @@
 
       <div class="row">
         <div class="col-md-3">
-          <img style="width:200px;height:200px" src="{{mars.hemisphere[0].img_url}}"/>
-          <p>{{mars.hemisphere[0].title}}</p>
+          <img class="planet" style="width:300px;height:300px" src="{{mars.hemisphere[0].img_url}}"/>
+          <p class="hemi">{{mars.hemisphere[0].title}}</p>
         </div>
         <div class="col-md-3">
-          <img style="width:200px;height:200px" src="{{mars.hemisphere[1].img_url}}"/>
-          <p>{{mars.hemisphere[1].title}}</p>
+          <img class="planet" style="width:300px;height:300px" src="{{mars.hemisphere[1].img_url}}"/>
+          <p class="hemi">{{mars.hemisphere[1].title}}</p>
         </div>
         <div class="col-md-3">
-          <img style="width:200px;height:200px" src="{{mars.hemisphere[2].img_url}}"/>
-          <p>{{mars.hemisphere[2].title}}</p>
+          <img class="planet" style="width:300px;height:300px" src="{{mars.hemisphere[2].img_url}}"/>
+          <p class="hemi">{{mars.hemisphere[2].title}}</p>
         </div>
         <div class="col-md-3">
-          <img style="width:200px;height:200px" src="{{mars.hemisphere[3].img_url}}"/>
-          <p>{{mars.hemisphere[3].title}}</p>
+          <img class="planet" style="width:300px;height:300px" src="{{mars.hemisphere[3].img_url}}"/>
+          <p class="hemi">{{mars.hemisphere[3].title}}</p>
         </div>
       </div>  
     </div>  

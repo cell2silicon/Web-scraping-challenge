@@ -1,11 +1,92 @@
 .col-md-3 {
-    border: 1px solid black;
+    border: 1px solid #8a5355;
 }
 
 .mh {
     text-align: center;
     padding: 20px;
 }
+
 body {
-    background-color: red !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url("mars_h.jpg");
+}
+
+.mission {
+    background-image: url("mars_b.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.col-md-7 {
+    margin-right: 0px;
+    float: left;
+}
+
+.col-md-4 {
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.planet {
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+.facts {
+    border: 2px solid sienna;
+}
+
+.image {
+    border: 2px solid sienna; 
+}
+
+.news {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+.hemi {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+.fun {
+    text-decoration: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: white;
+    border: 1px double white;
 }
